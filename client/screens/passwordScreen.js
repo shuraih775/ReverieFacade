@@ -34,7 +34,7 @@ const App = () => {
     }
 
     try {
-      const response = await axios.post('http://192.168.0.103:5000/api/auth/signup', {
+      const response = await axios.post('https://reveriefacade.onrender.com:5000/api/auth/signup', {
         email,
         username,
         password,

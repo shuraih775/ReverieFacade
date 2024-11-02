@@ -50,7 +50,7 @@ const ProfileScreen = () => {
 
       const token = await AsyncStorage.getItem('token'); // Retrieve token from AsyncStorage
 
-    const response = await axios.put('http://192.168.0.103:5000/api/auth/', 
+    const response = await axios.put('https://reveriefacade.onrender.com:5000/api/auth/', 
       updatedProfile, 
       {
         headers: {
@@ -142,7 +142,7 @@ const LoginScreen = ({ navigation }) => {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post('http://192.168.0.103:5000/api/auth/login', { email, password });
+      const response = await axios.post('https://reveriefacade.onrender.com:5000/api/auth/login', { email, password });
       console.log(response.data);
       const token = response.data.token;
       const user = response.data.user;

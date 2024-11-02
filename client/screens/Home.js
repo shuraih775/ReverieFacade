@@ -18,7 +18,7 @@ export default function DashboardScreen() {
     // console.log(token, dreamsCount);
     if (!dreamsCount && token) {
       try {
-        const res = await axios.get("http://192.168.0.103:5000/api/journal/getTodayDreamCount", {
+        const res = await axios.get("https://reveriefacade.onrender.com:5000/api/journal/getTodayDreamCount", {
           headers: {
             Authorization: `Bearer ${token}`
           }
@@ -37,7 +37,7 @@ export default function DashboardScreen() {
     // console.log(token);
     if (token) {
       try {
-        const res = await axios.get("http://192.168.0.103:5000/api/journal/getTodayDreamCount", {
+        const res = await axios.get("https://reveriefacade.onrender.com:5000/api/journal/getTodayDreamCount", {
           headers: {
             Authorization: `Bearer ${token}`
           }

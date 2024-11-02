@@ -11,7 +11,7 @@ const DreamLogsScreen = () => {
     try {
       const token = await AsyncStorage.getItem('token');
       console.log(token);
-      const response = await axios.get('http://192.168.0.103:5000/api/journal', {
+      const response = await axios.get('https://reveriefacade.onrender.com:5000/api/journal', {
         headers: {
           Authorization: `Bearer ${token}`
         }
