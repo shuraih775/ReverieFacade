@@ -329,7 +329,7 @@ const AnalyticsScreen = () => {
   const getData = async () => {
     try {
       const token = await AsyncStorage.getItem('token');
-      const response = await axios.get('https://reveriefacade.onrender.com:5000/api/journal/analytics', {
+      const response = await axios.get('https://reveriefacade.onrender.com/api/journal/analytics', {
         headers: {
           Authorization: `Bearer ${token}`
         }

@@ -34,7 +34,7 @@ const App = () => {
     }
 
     try {
-      const response = await axios.post('https://reveriefacade.onrender.com:5000/api/auth/signup', {
+      const response = await axios.post('https://reveriefacade.onrender.com/api/auth/signup', {
         email,
         username,
         password,

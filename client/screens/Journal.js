@@ -75,7 +75,7 @@ const MoodJournalScreen = () => {
 
     try {
       const token = await AsyncStorage.getItem('token');
-      const response = await axios.post('https://reveriefacade.onrender.com:5000/api/journal', dreamData,
+      const response = await axios.post('https://reveriefacade.onrender.com/api/journal', dreamData,
         {
           headers: {
           Authorization: `Bearer ${token}`
